@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 10px; 
+    margin: 20px;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0; 
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.gallery img {
+    margin: 10px; 
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+}
+.gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); 
+}
+
+
+.gallery img:nth-child(odd) {
+    width: 300px; 
+    height: auto; 
+}
+
+.gallery img:nth-child(even) {
+    width: 250px; 
+    height: auto;
+}
+
+.corner-image {
+    display: block; 
+    margin: 0px auto; 
+    max-width: 100%;
+    height: auto; 
+}
+
+.img-classe {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; 
+}
+
+.img-classe:hover {
+    filter: grayscale(0%);
+  }
+
+.container {
+    width: 10%; 
+    min-height: 300px;
+    margin-left: 10%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.youtube-audio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -9999px;
+}
+
+.text-image-container {
+    display: flex; 
+    align-items: center; 
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    padding: 15px 0;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.footer-list li {
+    margin: 5px 0; 
+}
+
+
+.footer-list li:last-child {
+    margin-bottom: 20px; 
+}
+
+.footer-list li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
