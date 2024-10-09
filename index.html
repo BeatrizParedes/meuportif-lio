@@ -1,0 +1,66 @@
+<!Doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
+</head>
+<body class="body">
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./index.html">Página inicial</a></li>
+                <li><a href="./sobre.html"> Sobre Mim</a></li>
+                <li><a href="./projetos.html">Projetos</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="typing" id="text"></div>
+    <img src="assets/img/mao.gif" alt="GIF" class="corner-image">
+    <iframe class="youtube-audio" src="https://www.youtube.com/embed/bpOSxM0rNPM?autoplay=1&loop=1&playlist=bpOSxM0rNPM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <script src="script.js"></script>
+
+    <script>
+        const text = "Entre e relaxe! Aqui, as melhores memórias são feitas com um pouco de música e muitas risadas.";
+        let index = 0;
+    
+        function type() {
+            if (index < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(index); 
+                index++; 
+                setTimeout(type, 100); 
+            } else {
+              
+                setTimeout(resetTyping, 2000);
+            }
+        }
+    
+        function resetTyping() {
+            index = 0; 
+            document.getElementById("text").innerHTML = ""; 
+            type(); 
+        }
+    
+        type(); 
+    </script>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Beatriz Paredes. Todos os direitos reservados.</p>
+        <ul class="footer-list">
+            <li><a href="https://www.linkedin.com/in/beatriz-paredes-do-nascimento-91664a182/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/BeatrizParedes"target="_blank">GitHub</a></li>
+            <li><a href="https://www.behance.net/beatrizparedes" target="_blank">Behance</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
